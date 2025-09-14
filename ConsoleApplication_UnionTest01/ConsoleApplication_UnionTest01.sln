@@ -11,6 +11,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication_UnitTest
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication_UnitText04", "..\ConsoleApplication1\ConsoleApplication1.vcxproj", "{97E0B3AB-BA1C-4E74-AB00-B5B1AF2CCFD5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CA_CalculateAverage", "..\CA_CalculateAverage\CA_CalculateAverage.vcxproj", "{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +58,14 @@ Global
 		{97E0B3AB-BA1C-4E74-AB00-B5B1AF2CCFD5}.Release|x64.Build.0 = Release|x64
 		{97E0B3AB-BA1C-4E74-AB00-B5B1AF2CCFD5}.Release|x86.ActiveCfg = Release|Win32
 		{97E0B3AB-BA1C-4E74-AB00-B5B1AF2CCFD5}.Release|x86.Build.0 = Release|Win32
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Debug|x64.ActiveCfg = Debug|x64
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Debug|x64.Build.0 = Debug|x64
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Debug|x86.ActiveCfg = Debug|Win32
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Debug|x86.Build.0 = Debug|Win32
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Release|x64.ActiveCfg = Release|x64
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Release|x64.Build.0 = Release|x64
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Release|x86.ActiveCfg = Release|Win32
+		{93E27CA6-4A18-4CD0-9D1A-83E1321BD035}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
