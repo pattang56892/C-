@@ -1,0 +1,32 @@
+# Add content to .gitignore
+@"
+# Visual Studio specific
+.vs/
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.db
+*.opendb
+
+# Build outputs
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.log
+*.idb
+
+# Other temp files
+*.tmp
+*.temp
+*.tlog
+*.lastbuildstate
+*.cache
+*.txt
+ipch/
+"@ | Out-File -FilePath ".gitignore" -Encoding UTF8
