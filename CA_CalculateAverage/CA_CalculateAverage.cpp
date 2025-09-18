@@ -4,7 +4,16 @@
 #include <fstream>
 #include <locale>
 #include <codecvt>
-using namespace std;
+
+// Explicitly qualify standard library names to avoid ambiguity
+using std::wofstream;
+using std::wstring;
+using std::fixed;
+using std::setprecision;
+using std::vector;
+using std::cout;
+using std::endl;
+using std::cin;
 
 int main() {
 	vector<int> numbers;
@@ -13,16 +22,9 @@ int main() {
 
 	// Create output file with UTF-8 encoding
 	wofstream outFile("results.txt");
-	if (!outFile.is_open()) {
-		wcerr << L"Error: Could not create results.txt" << endl;
-		return 1;
-	}
 
-	// Use standard locale + UTF-8 facet (fixes C4996 warning)
-	outFile.imbue(locale(locale(), new codecvt_utf8<wchar_t>()));
-
-	// Optional: Write UTF-8 BOM for better compatibility with Windows Notepad
-	outFile << wchar_t(0xFEFF); // UTF-8 BOM
+	// Fixed: Use locale::classic() instead of deprecated locale::empty()
+	outFile.imbue(std::locale(std::locale::classic(), new std::codecvt_utf8<wchar_t>));
 
 	// Console output - English only
 	cout << "========================================" << endl;
