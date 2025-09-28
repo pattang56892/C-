@@ -1,0 +1,53 @@
+# Minesweeper Project .gitignore
+
+# Documentation and consolidated files (ignored)
+Docs/
+
+# Visual Studio specific files
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+.vs/
+x64/
+Debug/
+Release/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
+*.exp
+*.ilk
+*.map
+*.tlog
+*.log
+*.idb
+*.res
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-*
+
+# Backup files
+*.bak
+*.backup
+*~
