@@ -1,0 +1,51 @@
+﻿=== MINESWEEPER PROJECT STRUCTURE ===
+
+CA_minesweeper/
+|-- Header Files/
+|   +-- minesweeper_core.h          Game logic interface
+|-- Source Files/
+|   |-- main.cpp                    Menu system & launcher
+|   |-- minesweeper_core.cpp        Game logic implementation
+|   |-- minesweeper_terminal.cpp    Terminal UI functions
+|   +-- minesweeper_qt.cpp          Qt GUI (planned)
+|-- Resource Files/
+|   +-- projectTree.txt             This file
++-- web/                           
+    +-- minesweeper.html          
++-- Documentation/
+    +-- (future: user manual, API docs)
+|-- Docs/                          
+|   +-- (automatic unique names...)
+|-- .gitignore                     
++-- consolidate-code.ps1           
+
+=== IMPLEMENTATION STATUS ===
+[X] Core Game Logic     - Complete (mines, reveal, flag, win/lose)
+[X] Terminal Interface  - Complete (enhanced with help system)
+[ ] Qt GUI Interface    - Planned (desktop application)
+[X] Web Interface       - Complete (HTML/CSS/JavaScript)
+[ ] SDL2 Interface      - Planned (lightweight graphics)
+[ ] ImGui Interface     - Planned (modern immediate-mode)
+
+=== FILE RESPONSIBILITIES ===
+minesweeper_core.h/.cpp:
+  - Minesweeper class definition and implementation
+  - Game state management, mine placement, cell logic
+  - No UI dependencies - pure game logic
+
+minesweeper_terminal.cpp:
+  - Terminal display functions
+  - User input handling for text interface
+  - Game rules and help system
+
+main.cpp:
+  - Main menu system
+  - Difficulty selection
+  - Interface launcher (coordinates between UIs)
+
+=== MODULAR DESIGN BENEFITS ===
+1. Separation of Concerns - UI separate from game logic
+2. Reusability - Same game logic for all interfaces
+3. Testability - Can test game logic independently
+4. Maintainability - Fix bugs in one place
+5. Extensibility - Easy to add new interfaces
